@@ -1,6 +1,7 @@
 import Vue from "vue"
 import Vuetify from "vuetify/lib/framework"
 import en from "vuetify/src/locale/en"
+import "@/assets/variables.scss"
 
 // fontawesome
 import "@fortawesome/fontawesome-free/css/all.css"
@@ -23,6 +24,8 @@ export const globalColorsPalette = {
 
 // export Vuetify instance
 export default new Vuetify({
+  // customVariables: ["../assets/variables.scss"],
+  // treeShake: true,
   theme: {
     options: {
       customProperties: true,

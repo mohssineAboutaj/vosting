@@ -9,14 +9,23 @@
       agency. It starts from here, You can teach yourself what you really like.
     </v-subheader>
     <div class="my-4 text-center">
-      <div class="mx-auto text-capitalize">
+      <v-btn-toggle
+        mandatory
+        multiple
+        v-model="billAnnualy"
+        active-class="primary white--text"
+      >
+        <v-btn flat>bill annualy</v-btn>
+        <v-btn flat>bill monthly</v-btn>
+      </v-btn-toggle>
+      <div class="mx-auto text-capitalize" v-if="false">
         <span class="d-inline-block">bill monthly</span>
         <v-switch class="d-inline-block mx-2" v-model="billAnnualy"></v-switch>
         <span class="d-inline-block">bill annualy</span>
       </div>
     </div>
     <v-row class="mt-10">
-      <v-col v-for="(plan, p) in plans" :key="p" cols="12" lg="4">
+      <v-col v-for="(plan, p) in plans" :key="p" cols="12" md="4">
         <v-card>
           <v-card-title class="justify-center headline text-capitalize mb-5">
             {{ plan.title }}

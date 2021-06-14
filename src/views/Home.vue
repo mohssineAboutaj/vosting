@@ -10,7 +10,7 @@
           Vosting
         </h1>
         <h4 class="subheading mb-8 mt-6">
-          Build your application today!
+          function Build your application today!
         </h4>
         <v-btn to="/login" router exact rounded color="white primary--text">
           get started
